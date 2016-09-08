@@ -26,7 +26,7 @@ namespace RSAKeyContainerLister
 
                     Console.WriteLine(containerName);
                 }
-                catch (Exception e)
+                catch (UnauthorizedAccessException e)
                 {
                     errors.Add(e.Message);
                 }
