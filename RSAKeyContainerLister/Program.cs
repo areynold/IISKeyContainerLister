@@ -18,7 +18,6 @@ namespace RSAKeyContainerLister
 
             foreach (var f in files)
             {
-                // try catch is to avoid some ACL issues on certain files
                 try
                 {
                     var bytes = File.ReadAllBytes(f);
