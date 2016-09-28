@@ -11,7 +11,7 @@ namespace RSAKeyContainerLister
     /// </summary>
     internal class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             var files = Directory.GetFiles(@"C:\ProgramData\Microsoft\Crypto\RSA\MachineKeys\");
             var errors = new List<string>();
