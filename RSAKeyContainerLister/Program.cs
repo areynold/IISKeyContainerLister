@@ -21,8 +21,8 @@ namespace RSAKeyContainerLister
                 // try catch is to avoid some ACL issues on certain files
                 try
                 {
-                    byte[] bytes = File.ReadAllBytes(f);
-                    string containerName = Encoding.ASCII.GetString(bytes, 40, bytes[8] - 1);
+                    var bytes = File.ReadAllBytes(f);
+                    var containerName = Encoding.ASCII.GetString(bytes, 40, bytes[8] - 1);
 
                     Console.WriteLine(containerName);
                 }
